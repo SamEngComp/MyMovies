@@ -9,9 +9,7 @@ import Domain.Models.Serie;
 
 public class Main {
     public static void main(String[] args) {
-        Movie myMovie = new Movie();
-        myMovie.setName("O poderoso chefão");
-        myMovie.setReleaseYear(1970);
+        Movie myMovie = new Movie("O poderoso chefão", 1970);
         myMovie.setDurationInMinutes(180);
         System.out.println("Duração do filme: " + myMovie.getDurationInMinutes());
 
@@ -22,18 +20,14 @@ public class Main {
         System.out.println("Total de avaliações: " + myMovie.getTotalRatings());
         System.out.println(myMovie.getAverage());
 
-        Serie lost = new Serie();
-        lost.setName("Lost");
-        lost.setReleaseYear(2000);
+        Serie lost = new Serie("Lost", 2000);
         lost.showTechnicalSheet();
         lost.setSeason(10);
         lost.setEpisodesPerSeason(10);
         lost.setMinutesPerEpisode(50);
         System.out.println("Duração para maratonar Lost: " + lost.getDurationInMinutes());
 
-        Movie othorMovie = new Movie();
-        othorMovie.setName("Avatar");
-        othorMovie.setReleaseYear(2023);
+        Movie othorMovie = new Movie("Avatar", 2023);
         othorMovie.setDurationInMinutes(200);
 
         TimeCalculator calculator = new TimeCalculator();

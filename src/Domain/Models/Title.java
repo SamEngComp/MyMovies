@@ -11,6 +11,12 @@ public class Title {
     private int totalRatings;
     private int durationInMinutes;
 
+    // CONSTRUCTOR
+
+    public Title(String name, int releaseYear) {
+        this.setName(name);
+    }
+
     // METHODS
 
     public void toAssess(double note) {

@@ -10,6 +10,12 @@ public class Movie extends Title implements Classifiable {
         return director;
     }
 
+    // CONSTRUCTOR
+
+    public Movie(String name, int releaseYear) {
+        super(name, releaseYear);
+    }
+
     // METHODS
 
     @Override

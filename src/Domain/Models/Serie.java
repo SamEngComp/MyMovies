@@ -9,6 +9,12 @@ public class Serie extends Title {
     private int episodesPerSeason;
     private int minutesPerEpisode;
 
+    // CONSTRUCTOR
+
+    public Serie(String name, int releaseYear) {
+        super(name, releaseYear);
+    }
+
     // METHODS
 
     @Override
