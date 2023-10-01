@@ -1,6 +1,6 @@
 package Domain.Models;
 
-public class Title {
+public class Title implements Comparable<Title> {
 
     // PROPERTIES
 
@@ -15,6 +15,7 @@ public class Title {
 
     public Title(String name, int releaseYear) {
         this.setName(name);
+        this.setReleaseYear(releaseYear);
     }
 
     // METHODS
@@ -27,6 +28,11 @@ public class Title {
     public void showTechnicalSheet() {
         System.out.println("Movie name: " + this.name);
         System.out.println("Release year: " + this.releaseYear);
+    }
+
+    @Override
+    public int compareTo(Title otherTitle) {
+        return this.getName().compareTo(otherTitle.getName());
     }
 
     // GET AND SET

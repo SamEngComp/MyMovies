@@ -22,6 +22,11 @@ public class Serie extends Title {
         return this.season * this.episodesPerSeason * this.minutesPerEpisode;
     }
 
+    @Override
+    public String toString() {
+        return "Serie name: " + this.getName() + " (" + this.getReleaseYear() + ")";
+    }
+
     // GET AND SET
 
     public int getSeason() {
