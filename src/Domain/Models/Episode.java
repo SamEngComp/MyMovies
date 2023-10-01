@@ -9,13 +9,13 @@ public class Episode implements Classifiable {
     private int number;
     private String name;
     private Serie serie;
-    private int totalVies;
+    private int totalViews;
 
     // METHODS
 
     @Override
     public int getClassification() {
-        if (this.totalVies > 100) return 4;
+        if (this.totalViews > 100) return 4;
         else return 2;
     }
 
@@ -43,5 +43,9 @@ public class Episode implements Classifiable {
 
     public void setSerie(Serie serie) {
         this.serie = serie;
+    }
+
+    public void setTotalViews(int totalViews) {
+        this.totalViews = totalViews;
     }
 }

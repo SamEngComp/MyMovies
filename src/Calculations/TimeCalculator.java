@@ -13,13 +13,13 @@ public class TimeCalculator {
     // METHODS
 
     public void add(Title title) {
-        System.out.println("Adding duration in min of: " + title);
+        System.out.println("Adding duration in min of: " + title.getName());
         this.totalTimeInMin += title.getDurationInMinutes();
     }
 
     // GET
 
-    int getTotalTimeInMin() {
+    public int getTotalTimeInMin() {
         return this.totalTimeInMin;
     }
 }

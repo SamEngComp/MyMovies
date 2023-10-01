@@ -13,12 +13,12 @@ public class Title {
 
     // METHODS
 
-    void toAssess(double note) {
+    public void toAssess(double note) {
         sumRatings += note;
         totalRatings ++;
     }
 
-    void showTechnicalSheet() {
+    public void showTechnicalSheet() {
         System.out.println("Movie name: " + this.name);
         System.out.println("Release year: " + this.releaseYear);
     }
